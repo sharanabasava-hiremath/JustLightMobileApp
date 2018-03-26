@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.apurva.assignment.justlightapp">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.apurva.assignment.justlightapp.Customer.Activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.apurva.assignment.justlightapp.Partner.Activity.PartnerDashboardActivity"
+            android:label="dashboard"
+            android:parentActivityName="com.apurva.assignment.justlightapp.Customer.Activity.UserSignInActivity"></activity>
+
+        <activity
+            android:name="com.apurva.assignment.justlightapp.Customer.Activity.UserSignUpActivity"
+            android:label="SignUp"
+            android:parentActivityName="com.apurva.assignment.justlightapp.Customer.Activity.MainActivity"></activity>
+        <activity
+            android:name="com.apurva.assignment.justlightapp.Customer.Activity.UserSignUpDetails"
+            android:label="SignUp"
+            android:parentActivityName="com.apurva.assignment.justlightapp.Customer.Activity.MainActivity"></activity>
+        <activity
+            android:name="com.apurva.assignment.justlightapp.Customer.Activity.UserSignInActivity"
+            android:label="SignIn"
+            android:parentActivityName="com.apurva.assignment.justlightapp.Customer.Activity.MainActivity"></activity>
+        <activity
+            android:name="com.apurva.assignment.justlightapp.Customer.Activity.CustomerDashboardActivity"
+            android:label="dashboard"
+            android:parentActivityName="com.apurva.assignment.justlightapp.Customer.Activity.UserSignInActivity"></activity>
+        <activity
+            android:name="com.apurva.assignment.justlightapp.Customer.Activity.HomeActivity"
+            android:label="Home"
+            android:parentActivityName="com.apurva.assignment.justlightapp.Customer.Activity.CustomerDashboardActivity"></activity>
+        <activity
+            android:name="com.apurva.assignment.justlightapp.Customer.Activity.ProfileActivity"
+            android:label="Profile"
+            android:parentActivityName="com.apurva.assignment.justlightapp.Customer.Activity.CustomerDashboardActivity"></activity>
+        <activity
+            android:name="com.apurva.assignment.justlightapp.Customer.Activity.GreenSolutionActivity"
+            android:label="Green Energy Solution"
+            android:parentActivityName="com.apurva.assignment.justlightapp.Customer.Activity.CustomerDashboardActivity"></activity>
+        <activity
+            android:name="com.apurva.assignment.justlightapp.Customer.Activity.AuthorizationRequestActivity"
+            android:label="Authorization request"
+            android:parentActivityName="com.apurva.assignment.justlightapp.Customer.Activity.CustomerDashboardActivity"></activity>
+        <activity
+            android:name="com.apurva.assignment.justlightapp.Customer.Activity.OrderHistoryActivity"
+            android:label="order History"
+            android:parentActivityName="com.apurva.assignment.justlightapp.Customer.Activity.CustomerDashboardActivity"></activity>
+        <activity
+            android:name="com.apurva.assignment.justlightapp.Customer.Activity.InviteActivity"
+            android:label="Invite"
+            android:parentActivityName="com.apurva.assignment.justlightapp.Customer.Activity.CustomerDashboardActivity"></activity>
+        <activity
+            android:name="com.apurva.assignment.justlightapp.Customer.Activity.HelpActivity"
+            android:label="Help"
+            android:parentActivityName="com.apurva.assignment.justlightapp.Customer.Activity.CustomerDashboardActivity"></activity>
+        <activity
+            android:name="com.apurva.assignment.justlightapp.Customer.Activity.SettingsActivity"
+            android:label="Settings"
+            android:parentActivityName="com.apurva.assignment.justlightapp.Customer.Activity.CustomerDashboardActivity"></activity>
+        <activity
+            android:name="com.apurva.assignment.justlightapp.Customer.Activity.RatingActivity"
+            android:label="Rating"
+            android:parentActivityName="com.apurva.assignment.justlightapp.Customer.Activity.CustomerDashboardActivity"></activity>
+        <activity
+            android:name="com.apurva.assignment.justlightapp.Customer.Activity.LogoutActivity"
+            android:label="Logout"
+            android:parentActivityName="com.apurva.assignment.justlightapp.Customer.Activity.CustomerDashboardActivity"></activity>
+        <activity
+            android:name="com.apurva.assignment.justlightapp.Customer.Activity.SmartLightingActivity"></activity>
+        <activity
+            android:name="com.apurva.assignment.justlightapp.Customer.Activity.MDPatnersActivity"></activity>
+        <activity
+            android:name="com.apurva.assignment.justlightapp.Customer.Activity.ODPatnersActivity"></activity>
+        <activity
+            android:name="com.apurva.assignment.justlightapp.Customer.Activity.DHSPatnersActivity"></activity>
+        <activity
+            android:name="com.apurva.assignment.justlightapp.Customer.Activity.SolarActivity"></activity>
+        <activity
+            android:name="com.apurva.assignment.justlightapp.Customer.Activity.SolarPatnersActivity"></activity>
+        <activity
+            android:name="com.apurva.assignment.justlightapp.Customer.Activity.HVACActivity"></activity>
+        <activity
+            android:name="com.apurva.assignment.justlightapp.Customer.Activity.HVACPatnersActivity"></activity>
+        <activity
+            android:name="com.apurva.assignment.justlightapp.Customer.Activity.WindowFilmActivity"></activity>
+        <activity
+            android:name="com.apurva.assignment.justlightapp.Customer.Activity.WindowFilmPatnersActivity"></activity>
+        <activity
+            android:name="com.apurva.assignment.justlightapp.Customer.Activity.FaqActivity"
+            android:label="Faq"
+            android:parentActivityName="com.apurva.assignment.justlightapp.Customer.Activity.HelpActivity"></activity>
+    </application>
+</manifest>
